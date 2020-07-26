@@ -1,0 +1,71 @@
+.ava {
+    max-width: 80px;
+}
+
+.list {
+    font-size: 0;
+}
+
+.item {
+    display: inline-block;
+    width: 45%;
+    background: #8888b3;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding: 2%;
+}
+
+.item:nth-of-type(odd) {
+    margin-right: 2%;
+}
+
+.item > div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.left {
+    margin-right: 15px;
+    text-align: center;
+}
+
+.left .ava {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.left .ava img {
+    margin: 0 auto;
+    display: block;
+}
+
+.left button {
+    display: inline-block;
+    width: auto;
+    padding: 0 10px;
+    background: #ffffff;
+    height: 35px;
+    line-height: 35px;
+    opacity: 0.8;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #888;
+    vertical-align: top;
+    transition: 0.4s;
+    border: none;
+    cursor: pointer;
+}
+
+.left button:hover {
+    transition: 0.4s;
+    opacity: 1;
+}
+
+.left button:focus {
+    outline: none;
+    border: none;
+}
+
+.right p {
+    margin: 5px 0;
+}

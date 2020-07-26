@@ -1,0 +1,28 @@
+.avaDesc {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.ava {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ava img {
+    width: 150px;
+    border-radius: 4px;
+}
+
+.desc {
+    display: inline-block;
+    color: #333333;
+    width: calc(100% - 170px);
+    margin-left: 10px;
+}
+
+.desc p {
+    margin: 0;
+}

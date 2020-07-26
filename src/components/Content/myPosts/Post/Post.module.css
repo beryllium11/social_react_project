@@ -1,0 +1,45 @@
+.post {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    background: #f4f4f4;
+}
+
+.post p {
+    color: #888;
+}
+
+.post img {
+    display: inline-block;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.postList {
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    background: #fff;
+}
+
+.like {
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+    background: #888;
+    display: inline-block;
+}
+
+.like button {
+    color: #fff;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    padding-left: 0;
+}
+
+.like button:focus {
+    border: none;
+    outline: none;
+}

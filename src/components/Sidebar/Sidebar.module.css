@@ -1,0 +1,4 @@
+.nav {grid-area: n; background: #8888b3; border: 2px solid #fff; padding: 10px;}
+.item {display: inline-block; width: 100%;}
+.item a {color: #fff;  display: inline-block; margin-bottom: 10px;}
+.last.item a {text-transform: uppercase;}

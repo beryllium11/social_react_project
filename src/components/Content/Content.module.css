@@ -1,0 +1,6 @@
+.content .ava .avaDesc {margin-bottom: 20px;}
+.content {grid-area: c;  color: #fff;}
+.content img {max-width: 100%;}
+.content .ava img {width: 150px; float: left;}
+.desc {display: inline-block;}
+.myPost {display: inline-block; width: 100%;}

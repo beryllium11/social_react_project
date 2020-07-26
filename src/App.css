@@ -1,0 +1,24 @@
+ul li {
+    list-style-type: none;
+}
+
+.App a {
+    margin-right: 10px;
+    color: green;
+}
+
+.app-wrapper {
+    display: grid;
+    grid-template-areas: "h h" "n c" "f f";
+    grid-template-columns: 2fr 10fr;
+
+}
+
+.app-wrapper-content {
+    grid-area: c;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px;
+    background: #ddd;
+    min-height: 500px;
+}
