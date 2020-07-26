@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/beryllium11/social_react_project.git/static/css/main.4fd2601d.chunk.css",
+    "main.js": "/beryllium11/social_react_project.git/static/js/main.70fe6dbf.chunk.js",
+    "main.js.map": "/beryllium11/social_react_project.git/static/js/main.70fe6dbf.chunk.js.map",
+    "runtime-main.js": "/beryllium11/social_react_project.git/static/js/runtime-main.75a8d51b.js",
+    "runtime-main.js.map": "/beryllium11/social_react_project.git/static/js/runtime-main.75a8d51b.js.map",
+    "static/js/2.e77af8ff.chunk.js": "/beryllium11/social_react_project.git/static/js/2.e77af8ff.chunk.js",
+    "static/js/2.e77af8ff.chunk.js.map": "/beryllium11/social_react_project.git/static/js/2.e77af8ff.chunk.js.map",
+    "index.html": "/beryllium11/social_react_project.git/index.html",
+    "precache-manifest.af9b14a630d12d77c2caa98761017a82.js": "/beryllium11/social_react_project.git/precache-manifest.af9b14a630d12d77c2caa98761017a82.js",
+    "service-worker.js": "/beryllium11/social_react_project.git/service-worker.js",
+    "static/css/main.4fd2601d.chunk.css.map": "/beryllium11/social_react_project.git/static/css/main.4fd2601d.chunk.css.map",
+    "static/js/2.e77af8ff.chunk.js.LICENSE.txt": "/beryllium11/social_react_project.git/static/js/2.e77af8ff.chunk.js.LICENSE.txt",
+    "static/media/def-ava.png": "/beryllium11/social_react_project.git/static/media/def-ava.e11b93a0.png",
+    "static/media/logo.svg": "/beryllium11/social_react_project.git/static/media/logo.5d5d9eef.svg",
+    "static/media/my-ava.png": "/beryllium11/social_react_project.git/static/media/my-ava.614321fe.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.75a8d51b.js",
+    "static/js/2.e77af8ff.chunk.js",
+    "static/css/main.4fd2601d.chunk.css",
+    "static/js/main.70fe6dbf.chunk.js"
+  ]
+}
