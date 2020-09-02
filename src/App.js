@@ -25,7 +25,7 @@ const App = (props) => {
                 </div>
                 <Footer/>
             </div>
-    )
+    );
 };
 
 

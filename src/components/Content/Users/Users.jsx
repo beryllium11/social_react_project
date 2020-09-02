@@ -14,6 +14,12 @@ class Users extends React.Component {
 
     render() {
         return <div className={styles.list}>
+            <div className={styles.pager}>
+                <span className={styles.pageItem}>1</span>
+                <span className={styles.pageItem}>2</span>
+                <span className={styles.pageItem}>3</span>
+                <span className={styles.pageItem}>4</span>
+            </div>
             {
                 this.props.users.map(u => <div className={styles.item} key={u.id}>
                     <div className={styles.left}>
