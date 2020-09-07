@@ -15,7 +15,7 @@
     padding: 2%;
 }
 
-.item:nth-of-type(odd) {
+div.item:nth-of-type(even) {
     margin-right: 2%;
 }
 
@@ -68,4 +68,27 @@
 
 .right p {
     margin: 5px 0;
+}
+
+.pager {
+    margin-bottom: 5px;
+}
+
+.pager p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #8888b3;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.pageItem {
+    font-size: 15px;
+    margin-right: 5px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.pageItem.selected {
+    font-weight: bold;
 }
