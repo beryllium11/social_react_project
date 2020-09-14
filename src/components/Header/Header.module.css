@@ -1,2 +1,3 @@
-.header {grid-area: h; background: green; border: 2px solid #fff; padding: 10px;}
+.header {grid-area: h; background: linear-gradient(0.25turn, #8888b3 10%, #ddd 50%); border: 2px solid #fff; padding: 10px;}
 .header img {width: 100px;}
+.loginBlock {float: right;}

@@ -92,3 +92,5 @@ div.item:nth-of-type(even) {
 .pageItem.selected {
     font-weight: bold;
 }
+.loaderWrapper {position: fixed; top: 0; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.4)}
+.loaderWrapper img {position: absolute; z-index: 2; left: calc(50% - 32px); top: calc(50% - 32px);}
