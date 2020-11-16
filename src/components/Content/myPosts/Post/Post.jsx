@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Post.module.css";
 
 const Post = (props) => {
-
+   // const {text, uid} = props.text1;
     let onLikeIncrement = () => {
         let postId = props.id;
         props.likeIncrement(postId);

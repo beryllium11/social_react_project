@@ -1,0 +1,26 @@
+ @mixin errorF {
+     border: 1px red solid;
+     box-shadow: red 0 0 5px 0;
+     position: relative;
+ }
+ @mixin errorT {
+   color: red;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-size: 14px;
+   display: block;
+ }
+ @mixin rightF {
+   border: 1px solid;
+   position: relative;
+ }
+ .errorForm {
+    @include errorF;
+ }
+ .errorText {
+    @include errorT
+ }
+ .rightForm {
+   @include rightF;
+ }
+.hidden {display: none;}

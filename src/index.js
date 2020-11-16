@@ -7,8 +7,6 @@ import {BrowserRouter} from "react-router-dom";
 import * as serviceWorker from './serviceWorker'
 import {Provider} from "react-redux";
 
-//addPost("SamurayJs");
-
     ReactDOM.render(
         <BrowserRouter>
             <Provider store={store}>

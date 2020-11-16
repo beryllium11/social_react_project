@@ -1,7 +1,23 @@
 import React from "react";
 import s from "./Dialogs.module.css";
-import {NavLink} from "react-router-dom";
+import {NavLink, Redirect} from "react-router-dom";
+import {Field, reduxForm} from "redux-form";
+import {Textarea} from "../common/FormControls/FormControls";
+import {maxLengthCreator, requiredField} from "../../utils/validators/validator";
 
+
+const maxLength = maxLengthCreator(100);
+const DialogForm = (props) => {
+    return (
+        <form onSubmit={props.handleSubmit}>
+            <Field component={Textarea} name={'dialogTextarea'}
+                   placeholder={'type your message'} validate={[requiredField, maxLength]} />
+            <button>Send</button>
+        </form>
+    )
+};
+
+const DialogFormRedux = reduxForm({form: 'postArea'}) (DialogForm);
 
 const Dialogs = (props) => {
 
@@ -11,17 +27,13 @@ const Dialogs = (props) => {
 
     let messagesElements = state.messagesData.map (
         messageElement => <Message message={messageElement.message}/> );
-    let newMessText = React.createRef();
+ //   let newMessText = React.createRef();
 
-    let addMessage = () => {
-
-        props.addMessage();
+    let addMessage = (values) => {
+        props.addMessage(values.dialogTextarea);
     };
 
-    let onMessChange = () => {
-        let showMes = newMessText.current.value;
-        props.updateNewMessage(showMes);
-    };
+   // if (!props.isAuth) return <Redirect to={'/login'}/>
 
     return (
         <div className={s.dialogs}>
@@ -31,15 +43,11 @@ const Dialogs = (props) => {
             </div>
             <div className={s.messages}>
                 {messagesElements}
-                <textarea ref={newMessText}
-                          value={state.newMessText}
-                          onChange={onMessChange}
-                />
-                <button onClick={addMessage}>send</button>
+                <DialogFormRedux onSubmit={addMessage}/>
             </div>
         </div>
     )
-}
+};
 const DialogItem = (props) => {
 
     let path = "/dialog/" + props.id;
@@ -49,7 +57,7 @@ const DialogItem = (props) => {
         </div>
         )
 
-}
+};
 const Message = (props) => {
     return (
         <div className={s.messagesItem}>

@@ -1,5 +1,4 @@
 const ADD_MESSAGE = 'ADD-MESSAGE';
-const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
 
 let initialState = {
 
@@ -14,8 +13,6 @@ let initialState = {
             {id: 2, message: "Microsoft Corporation"},
             {id: 3, message: "Version 10.0.17134.765"}
         ],
-        newMessText: 'type your message here'
-    
 };
 
 const messagesReducer = (state = initialState, action) => {
@@ -27,17 +24,9 @@ const messagesReducer = (state = initialState, action) => {
                 ...state,
                 messagesData: [...state.messagesData, {
                     id: 5,
-                    message: state.newMessText,
+                    message: action.newMessText,
                 }],
                 dialogsData: [...state.dialogsData],
-                newMessText: ''
-            };
-        }
-
-        case UPDATE_NEW_MESSAGE_TEXT: {
-            return  {
-                ...state,
-                newMessText: action.newText
             };
         }
         default: return state;
@@ -45,15 +34,6 @@ const messagesReducer = (state = initialState, action) => {
 
 };
 
-export const addMessageActionCreator = () => {
-    return {
-        type: ADD_MESSAGE,
-    }
-};
-export const updateNewMessageTextActionCreator = (text) => {
-    return {
-        type: UPDATE_NEW_MESSAGE_TEXT,
-        newText: text
-    }
-};
+export const addMessageActionCreator = (newMessText) => ({ type: ADD_MESSAGE, newMessText });
+
 export default messagesReducer;
